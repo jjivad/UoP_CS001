@@ -1,0 +1,129 @@
+1)
+#first stage, just building a function that will return 0.0, testing if the function work
+def hypotenuse(a, b):
+  return 0.0
+print(hypotenuse(3,4))
+
+output:
+0.0
+
+#second stage, the side of the triangle. we know the addition of each side square give us the hypotenuse square. means their squareroot will be our hypotenuse.
+def hypotenuse(a, b):
+  side_one = a**2
+  side_two = b**2
+  print("side one square is: ", side_one)
+  print("side two square is: ", side_two)
+  return 0.0
+print(hypotenuse(3,4))
+
+output:
+side one square is:  9
+side two square is:  16
+0.0
+
+# third stage, we do the sum of those sides
+def hypotenuse(a, b):
+  side_one = a**2
+  side_two = b**2
+  sum_sides = side_one + side_two
+  print("the sum of the sides square is: ", sum_sides)
+  return 0.0
+print(hypotenuse(3,4))
+
+output:
+the sum of the sides square is:  25
+0.0
+
+# fourth stage, the squareroot of our hypotenuse [(a**2) + (b**2) = (c**2)]
+import math #did import math to avoid the warning sign in my codes saying undefined name math.
+def hypotenuse(a, b):
+  side_one = a**2
+  side_two = b**2
+  sum_sides = side_one + side_two
+  hyp = math.sqrt(sum_sides)
+  print("the sum of the sides square is: ", sum_sides) # just for testing the sum of those sides square 
+  return hyp
+print(hypotenuse(3,4))
+
+output:
+the sum of the sides square is:  25
+5.0 #our hypotenuse is 5
+
+for other 2 calls that I chose myself:
+import math 
+def hypotenuse(a, b):
+  side_one = a**2
+  side_two = b**2
+  sum_sides = side_one + side_two
+  hyp = math.sqrt(sum_sides)
+  print("the sum of the sides square is: ", sum_sides) # just for testing the sum of those sides square 
+  return hyp
+print(hypotenuse(5,7))
+print(hypotenuse(20,4))
+
+output:
+the sum of the sides square is:  74
+8.602325267042627  #hypotenuse of (5,7)
+the sum of the sides square is:  416
+20.396078054371138 # hytenuse of (20,4)
+
+2)
+#stage one, build the function
+def salary_annual(a, b, c):
+  return 0.0
+name= "Yishay"
+salary_monthly = 5000
+tax_monthly = 16
+print(salary_annual(name, salary_monthly, tax_monthly))
+
+output:
+0.0
+
+#stage two, compute monthly net income.
+def salary_annual(a, b, c):
+  tax_amount = b * (c/100)
+  net_income = b - tax_amount
+  print("your name is: ", a)
+  print("your monthtly salary is: ", b)
+  print("your monthly tax is: ", tax_amount)
+  print("your net income is: ", net_income)
+  return 0.0
+name= "Yishay"
+salary_monthly = 5000
+tax_monthly = 16
+print(salary_annual(name, salary_monthly, tax_monthly))
+
+output:
+your name is:  Yishay
+your monthtly salary is:  5000
+your monthly tax is:  800.0
+your net income is:  4200.0
+0.0
+
+# stage three, have the annual salary net income
+
+def salary_annual(a, b, c):
+  tax_amount = b * (c/100)
+  net_income = b - tax_amount
+  annual_net_income = net_income * 12
+  print("Hello ", a, ", after paying your tax monthly of ", tax_amount,", with ", net_income, " as monthly net income, you will get the below amount every year:")
+  return annual_net_income
+name= "Yishay"
+salary_monthly = 5000
+tax_monthly = 16
+print(salary_annual(name, salary_monthly, tax_monthly))
+
+output:
+Hello  Yishay , after paying your tax monthly of  800.0 , with  4200.0  as monthly net income, you will get the below amount every year:
+50400.0
+
+3) So far, so good! At the beginning, I was somehow annoyed with the comments when they were asking me to explain my coded with lot of words.
+but with time, I've improved and I've seen it is even helping me to know if I've really understood what I'm doing. Now I can write code and 
+include more explanation and feel good with it. I think my peers like my feedaback too since I can provide some examples and the person can 
+comment back to show that they've benefited something out of it.
+
+
+
+
+
+

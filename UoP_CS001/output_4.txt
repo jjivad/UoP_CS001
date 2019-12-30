@@ -1,0 +1,17 @@
+value of a:  10  value of b:  2
+value of a:  5.0  value of b:  2
+is_power(10, 2) returns:  False
+
+value of a:  27  value of b:  3
+value of a:  9.0  value of b:  3
+value of a:  3.0  value of b:  3
+is_power(27, 3) returns:  True
+
+value of a:  1  value of b:  1
+is_power(1, 1) returns:  True
+
+value of a:  10  value of b:  1
+is_power(10, 1) returns:  True
+
+value of a:  3  value of b:  3
+is_power(3, 3) returns:  True

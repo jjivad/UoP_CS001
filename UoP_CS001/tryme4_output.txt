@@ -1,0 +1,36 @@
+calling the 9 lines
+.
+.
+.
+.
+.
+.
+.
+.
+.
+if you need 25 lines, you need to include three_lines, nine_lines and clear_screen functions to your calling statement
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.

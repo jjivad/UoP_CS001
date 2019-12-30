@@ -1,0 +1,95 @@
+#quesion 1
+def any_lowercase1(s):
+  for c in s:
+    if c.islower():
+      return True
+    else:
+      return False
+word = "JessyIngacare"
+print(any_lowercase1(word))
+
+output:
+False
+
+#in this function we are just check the first character and it was checked that it is not a lower case, it jumped to else and returned False, without going through the entire look.
+
+#question 2
+def any_lowercase2(s):
+  for c in s:
+    if 'c'.islower():
+      return 'True'
+    else:
+      return 'False' 
+
+word = "JessyIngacare"
+print(any_lowercase2(word))
+
+output:
+True
+
+#in this function they checked the first condition that verifies since the letter 'c' is a lower character and the function returned True, then stop the loop 
+
+#question 3
+
+def any_lowercase3(s):
+  for c in s:
+    flag = c.islower()
+  return flag
+word = "JessyIngacare"
+print(any_lowercase3(word))
+
+output:
+True
+
+#in this function, they checked the all the letter and returned the last value since it was the end of the loop. when they reached the end, the last letter verified the condion since it was a lower case letter "e" in my example.
+
+#question 4
+
+def any_lowercase4(s):
+  flag = False
+  for c in s:
+    flag = flag or c.islower()
+  return flag
+word = "JessyIngacare"
+print(any_lowercase4(word)) 
+
+output:
+True
+
+#in this function, they initialize the 'flag' variable to False. then the condition later on verified the 'flag' variable to be True since the last letter of the variable 's' was a lower case. that 'or' help to evaluate if one of the condtion is true, the all statement become true. it can only be false if all of them are fasle.
+
+#question 5
+def any_lowercase5(s):
+  for c in s:
+    if not c.islower():
+      return False
+  return True 
+word = "JessyIngacare"
+print(any_lowercase5(word))
+
+Output:
+False
+
+#in this function, the only check the first letter and return the False output since the condition was not verufied. 
+
+
+#look at this example (almost the same, but I've included a print statement to show how it works):
+def any_lowercase5(s):
+  for c in s:
+    print(c) #this help to print the progress of the loop to see the letter that 'c' contains when going through 's'
+    if not c.islower():
+      return False
+  return True 
+word = "jessyIngacare"
+print(any_lowercase5(word))
+
+output:
+j
+e
+s
+s
+y
+I
+False
+
+#and we can see how the loop stopped when it found a letter that is not in a lower case after cheking some privious letters that verified the condion.
